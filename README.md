@@ -1,50 +1,40 @@
-<<<<<<< HEAD
-React Boilerplate
+
+WK5 LHL Project - Chatty App
 =====================
 
-A minimal and light dev environment for ReactJS.
+A simple app that allows multiple client to send messages to each other via a websocket server. Each client/user is assigned a random colour upon connecting to the websocket server.
+
+There is a chatbar where the user can enter/change their name/alias as well as type a message and send it by typing ENTER.
+
+The user can also send image links which will display as images
+
+A lightweight webpack dev server is setup to update React and a small WebSockets server is set up to handle communiation between it and connected clients.
+
+The number of online users is displayed as well as notification messages when a user changes their name
+
 
 ### Usage
 
-Clone the boilerplate and create your own git repo.
+The Webpack server is setup and then listens to localhost 3000. This is hardcoded.
 
-```
-git clone git@github.com:lighthouse-labs/react-simple-boilerplate.git
-cd react-simple-boilerplate
-git remote rm origin
-git remote add origin [YOUR NEW REPOSITORY]
-# Manually update your package.json file
-```
+The WebSocket server is setup and then listens to localhost 3001. This is also hardcoded
 
-Install the dependencies and start the server.
 
-```
-npm install
-npm start
-open http://localhost:3000
-```
 
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
 
 ### Dependencies
 
+For Webpack Server:
 * React
 * Webpack
 * [babel-loader](https://github.com/babel/babel-loader)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+
+
+For WebSocket Server:
+
+* Express 4.16.2
+* UUID: 3.1.0
+* WS 3.2.0
 =======
-# w5d1boilerplate
-React boiler plate repository
->>>>>>> 59542058fdc9c9e4475b48f56881d9d05abdd98b
+

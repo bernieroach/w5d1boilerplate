@@ -3,10 +3,6 @@
 const express = require('express');
 const SocketServer = require('ws');
 const uuid = require('uuid');
-const querystring = require('querystring');
-
-
-
 
 let userCount = 0;
 // Set the port to 3001
