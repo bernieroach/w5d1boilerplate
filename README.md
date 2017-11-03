@@ -17,9 +17,19 @@ The number of online users is displayed as well as notification messages when a 
 
 The Webpack server is setup and then listens to localhost 3000. This is hardcoded.
 
+Use
+
+npm start
+
+to start the webpack server
+
 The WebSocket server is setup and then listens to localhost 3001. This is also hardcoded
 
+Use
 
+npm start
+
+to start the websocket server
 
 
 ### Dependencies
